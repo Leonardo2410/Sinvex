@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Sinvex.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,5 +13,7 @@ namespace Sinvex.DataAccess.Data
             : base(options)
         {
         }
+
+        public DbSet<Bodega> Bodegas { get; set; }
     }
 }
